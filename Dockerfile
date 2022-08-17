@@ -1,5 +1,5 @@
 FROM ruby:3-alpine as main
-RUN apk --no-cache add nodejs git g++ make postgresql-dev sqlite-dev tzdata file imagemagick
+RUN apk --no-cache add nodejs git g++ make postgresql-dev sqlite-dev tzdata file imagemagick gcompat
 WORKDIR /app
 COPY Gemfile /app
 COPY Gemfile.lock /app
